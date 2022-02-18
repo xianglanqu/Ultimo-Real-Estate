@@ -1,0 +1,123 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> INSERT TITLE HERE </title>
+  <meta name="author" content="ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE">
+  <link rel="stylesheet" href="ultimo_real_estate.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/form.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <img src="images/ultimo_real_estate_logo.png" width="625" height="160"
+        alt="Ultimo Real Estate, Sydney, Australia">
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="property.html">Property of the Week</a></li>
+        <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="suburb_profile.html">Suburb Profile</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" id="current">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="col1">
+        <h1>Contact</h1>
+        <ul>
+          <li><strong>Ultimo Real Estate</strong></li>
+          <li>20 Jones Street</li>
+          <li>ULTIMO NSW 2007</li>
+        </ul>
+        <ul>
+          <li><strong>Mob: +61 123 456 789</strong></li>
+          <li>Tel: +612 1234 5678</li>
+          <li>info@ultimorealestate.com.au</li>
+        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau"
+          width="570" height="500" allowfullscreen=""></iframe>
+      </section>
+      <section id="col2">
+        <h2>Property Enquiry</h2>
+        <form method="post" action="dialog_box.html" id="form3" onsubmit="return checkEntry()">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name *:</label>
+            <input name="name" id="name" maxlength="30" tabindex="10">
+            <p class="error" id="nameError"></p>
+
+            <label for="mobile">Mobile *:</label>
+            <input type="tel" name="mobile" id="mobile" maxlength="15" tabindex="20">
+            <p class="error" id="mobileError"></p>
+            <label for="email">Email *:</label>
+            <input type="email" name="email" id="email" tabindex="30">
+            <p class="error" id="emailError"></p>
+            <p>* = required fields</p>
+          </fieldset>
+          <fieldset>
+            <legend>Do you want to Buy or Sell or Rent?</legend>
+            <div id="radio">
+              <label for="buy">Buy:</label>
+              <input type="radio" name="three" value="buy" id="buy" tabindex="40">
+              <label for="sell">Sell:</label>
+              <input type="radio" name="three" value="sell" id="sell" tabindex="50">
+              <label for="rent">Rent:</label>
+              <input type="radio" name="three" value="rent" id="rent" tabindex="60">
+            </div>
+            <p class="error" id="threeError"></p>
+          </fieldset>
+          <fieldset>
+            <legend>What property type/s are you interested in?</legend>
+            <div id="checkbox">
+              <label for="unit">Unit:</label>
+              <input type="checkbox" name="propertyType" value="unit" id="unit">
+              <label for="townhouse">Townhouse:</label>
+              <input type="checkbox" name="propertyType" value="townhouse" id="townhouse">
+              <label for="house">House:</label>
+              <input type="checkbox" name="propertyType" value="house" id="house">
+            </div>
+            <p class="error" id="propertyTypeError"></p>
+          </fieldset>
+
+
+          <strong>How many bedrooms do you require?</strong>
+          <select name="bedrooms" id="bedrooms">
+            <option value="">Choose your preferred number of bedrooms</option>
+            <option value="studio">Studio</option>
+            <option value="1">1 Bedroom</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3+">3+ Bedrooms</option>
+          </select>
+          <p class="error" id="bedroomError"></p>
+          <br>
+          <strong>Comments</strong>
+          <textarea name="comments" rows="5" cols="30" id="comments" maxlength="1000"></textarea>
+          <input class="button" type="submit" value="Submit Enquiry">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>&copy; Ultimo Real Estate 20xx</li>
+        <li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png" width="30" height="30"
+              alt="Ultimo Real Estate on Facebook"></a></li>
+        <li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png" width="30" height="30"
+              alt="Ultimo Real Estate on Instagram"></a></li>
+        <li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png" width="30" height="30"
+              alt="Ultimo Real Estate on Twitter"></a></li>
+        <li><a href="legals.html">Legals</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="form_validator.js"></script>
+</body>
+
+</html>

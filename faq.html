@@ -1,0 +1,140 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title> INSERT TITLE HERE </title>
+
+  <meta name="author" content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     ">
+
+  <link rel="stylesheet" href="ultimo_real_estate.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+  <div id="wrapper">
+
+
+    <header>
+      <img src="images/ultimo_real_estate_logo.png" width="625" height="160"
+        alt="Ultimo Real Estate, Sydney, Australia">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" id="current">Home</a></li>
+        <li><a href="property.html">Property of the Week</a></li>
+        <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="suburb_profile.html">Suburb Profile</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <ul class="question">
+        <li>
+          <h2>1. How should I prepare my house before selling it?</h2>
+          <p> First impressions matter in business, but especially in real estate. Anyone walking through a house or
+            touring
+            it virtually will be looking for ways to pass or negotiate down on the price. You must help clients make
+            sure
+            that the HVAC, plumbing, and electrical system all work properly. Each room should look clean and
+            decluttered
+            with no overt damage insight.</p>
+
+        </li>
+        <li>
+          <h2>2. Should I order a home inspection?</h2>
+          <p> Getting a pre-sale home inspected is never a bad idea, especially to get your client the best price for
+            their
+            home. Some homebuyers will feel uncomfortable purchasing a house without seeing a home inspection. Many will
+            often hire their own inspector. It’s better to be safe than sorry.</p>
+
+        </li>
+        <li>
+          <h2>3. How long will it take to sell my home?</h2>
+          <p> Once the house is on the market, it may take anywhere from four to six weeks to sell. However, if the
+            market
+            is
+            fairly hot, a seller could see their house off the market within a week. On the flip side, if there is a
+            lull
+            in
+            the market or issues arise such as negotiation, lack of exposure, or house conditions then the property can
+            sit
+            on the market for months.</p>
+
+        </li>
+        <li>
+          <h2>4. What is the selling price of my home?</h2>
+          <p> The selling price of a house fluctuates depending on multiple factors. The most common ones are the
+            neighborhood
+            and what similar-sized houses are currently selling for. Also, look at the age and condition. Do major
+            repairs
+            need to be done? If so, that might lower the property. And again, the market matters. Like everything else,
+            home
+            prices vary depending on supply and demand. Your job as a realtor is to best inform your clients about these
+            different factors and accurately list their house.</p>
+
+        </li>
+
+        <li>
+          <h2>5. Is there a reason my home’s assessed value differs compared to the market value?</h2>
+          <p> A public tax assessor gives the assessed value for a property. This assessment typically occurs yearly
+            for
+            taxation purposes. The fair market value is an agreed-upon price between a willing buyer and seller. There
+            is
+            usually a difference between the assessed value and market value. For homeowners, the assessed value is a
+            double-edged sword. Because, if their annual assessed value increased then their yearly taxes will also be
+            raised. On the flip side, when selling a house it can help boost its market value.</p>
+
+        </li>
+
+      </ul>
+
+    </main>
+
+    <footer>
+      <ul>
+        <li>&copy; Ultimo Real Estate 20xx</li>
+        <li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png" width="30" height="30"
+              alt="Ultimo Real Estate on Facebook"></a></li>
+        <li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png" width="30" height="30"
+              alt="Ultimo Real Estate on Instagram"></a></li>
+        <li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png" width="30" height="30"
+              alt="Ultimo Real Estate on Twitter"></a></li>
+        <li><a href="legals.html">Legals</a></li>
+      </ul>
+    </footer>
+
+
+  </div>
+
+  <script>
+    var question = document.querySelector('.question');
+    var lis = question.children;
+    for (var i = 0; i < lis.length; i++) {
+      lis[i].onclick = function () {
+        var status = this.children[1].style.display;
+        // console.log("sd", status);
+        if (status == 'block') {
+          this.children[1].style.display = '';
+        } else if (status == '') {
+          this.children[1].style.display = 'block';
+        }
+      }
+    }
+
+    console.log("ul this", this.children);
+  </script>
+</body>
+
+</html>
